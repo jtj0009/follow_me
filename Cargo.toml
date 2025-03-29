@@ -1,0 +1,18 @@
+[package]
+name = "follow_me"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+opencv = { version = "0.94.3", features = ["clang-runtime", "imgproc", "highgui", "dnn", "imgcodecs"] }
+rclrs = "*"
+geometry_msgs = "*"
+anyhow = "1.0"
+chrono = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+
+[patch.crates-io]
+geometry_msgs = { path = "/home/pi/Documents/workspace/install/geometry_msgs/share/geometry_msgs/rust" }
+std_msgs = { path = "/home/pi/Documents/workspace/install/std_msgs/share/std_msgs/rust" }
+builtin_interfaces = { path = "/home/pi/Documents/workspace/install/builtin_interfaces/share/builtin_interfaces/rust" }
