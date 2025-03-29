@@ -1,0 +1,4 @@
+save_thumbnails: true
+centroid_threshold: 1.0
+area_threshold: 50.0
+confidence_threshold: 0.2
